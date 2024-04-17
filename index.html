@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowchart with D3.js</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .node {
+        fill: #ccc;
+        font-size: 12px;
+      }
+      .node:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .link {
+        fill: none;
+        stroke-width: 2px;
+      }
+      .node text {
+        white-space: pre-wrap;
+      }
+      .text-color {
+        text-anchor: middle;
+      }
+      .group1 {
+        fill: #f28c1c;
+      }
+      .group2 {
+        fill: #009c6b;
+      }
+      .group3 {
+        fill: #8a54ed;
+      }
+      .group4 {
+        fill: #ff00d1;
+      }
+      .group5 {
+        fill: #00bbba;
+      }
+      .group6 {
+        fill: #0075bd;
+      }
+      .group7 {
+        fill: #1b047b;
+      }
+      .none {
+        fill: #fff;
+      }
+      .vertical-line {
+        border-left: 3px solid #8a54ed;
+        height: auto;
+        padding-right: 2px;
+      }
+      .vertical-line p {
+        padding-left: 10px;
+        font-size: 18px;
+      }
+      .most-popular {
+        stroke: #000000;
+        stroke-dasharray: 25 25;
+        stroke-width: 4px;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        background-color: #1c1c1c;
+        color: white;
+        width: 100%;
+        border-bottom: 5px solid #ff00d1;
+        padding: 0px 50px;
+      }
+      .left {
+        width: 40%;
+      }
+      .left h3 {
+        font-size: 30px;
+      }
+      .right {
+        width: 50%;
+        display: grid;
+        justify-content: center;
+      }
+      .right p {
+        font-size: 18px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <h3>SALESFORCE CERTIFICATE PATHS</h3>
+        <div class="vertical-line">
+          <p>
+            Here's the map for where you can take your Salesforce career,
+            showing the recommended experience anf certification you will need
+            to the next stage. <br />
+            Which path will you follow?
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <p>CERTIFICATES</p>
+        <img src="https://i.ibb.co/TcTHKCW/a101.png" alt="" srcset="" />
+      </div>
+    </div>
+    <div style="width: 97%; display: block; margin: 0 auto">
+      <svg viewBox="0 0 1900 1000" id="flowchart"></svg>
+    </div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="./joinjs.js"></script>
+  </body>
+</html>
